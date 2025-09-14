@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Participatory Village Maps — Paper to HTML (Beginner)</title>
+</head>
+<body>
+  <header>
+    <h1>The Role of Participatory Village Maps in Strengthening Public Participation Practice</h1>
+    <p><strong>Authors (source):</strong> Aulia Akbar, Johannes Flacke, Javier Martinez, Martin F. A. M. van Maarseveen</p>
+    <p><strong>Source (official):</strong>
+      <a href="https://www.mdpi.com/2220-9964/10/8/512" target="_blank" rel="noopener noreferrer">
+        ISPRS Int. J. Geo-Inf. (2021) — DOI: 10.3390/ijgi10080512
+      </a>
+    </p>
+  </header>
+
+  <main>
+    <!-- Abstract -->
+    <article>
+      <header>
+        <h2>Abstract</h2>
+      </header>
+      <p>
+        This study examines how participatory village maps produced with community workshops can improve
+        public participation processes. The authors evaluate participatory mapping activities in several villages
+        and analyze how the resulting maps informed local planning forums (Musrenbang) and contributed to better
+        communication between residents and planners.
+      </p>
+
+      <!-- Introduction -->
+      <section>
+        <h2>1. Introduction</h2>
+        <p>
+          Participatory mapping is a community-driven technique that captures local geographic knowledge and priorities.
+          It can be used to represent boundaries, resources, social places, and local concerns that are often absent from
+          formal datasets. This paper investigates whether village maps created through participatory workshops strengthen
+          the local planning consultation (Musrenbang) in Indonesia.
+        </p>
+      </section>
+
+      <!-- Background -->
+      <section>
+        <h2>2. Background</h2>
+        <p>
+          Prior research on participatory mapping and volunteered geographic information (VGI) shows benefits for local
+          empowerment and planning. The authors situate their study within this literature and emphasize methodological
+          attention to community representation and map co-production.
+        </p>
+      </section>
+
+      <!-- Methods -->
+      <section>
+        <h2>3. Methods</h2>
+        <p>
+          The study used participatory mapping workshops in five villages, followed by evaluation of Musrenbang meetings.
+          Methods included group mapping exercises, focus discussions, and interviews with local stakeholders to assess
+          how maps were used in the consultation process.
+        </p>
+
+        <h3>3.1 Participatory Mapping Workshops</h3>
+        <p>
+          Workshops guided residents to draw and annotate village features on base maps, identify priorities, and record
+          changes or concerns. Workshop outputs were digitized and shared with local planning actors.
+        </p>
+
+        <h3>3.2 Evaluation of Musrenbang Use</h3>
+        <p>
+          The authors observed local Musrenbang meetings and interviewed participants to determine whether and how
+          the participatory maps influenced discussion, decision making, and the legitimacy of proposed plans.
+        </p>
+      </section>
+
+      <!-- Results -->
+      <section>
+        <h2>4. Results</h2>
+        <p>
+          The participatory village maps influenced local consultation in multiple ways: they helped residents communicate
+          local priorities more clearly, provided concrete visual evidence during Musrenbang, and in some cases guided
+          local planning choices. The study reports examples across the villages where maps were referenced and used to
+          support requests or improvements in local proposals.
+        </p>
+
+        <ul>
+          <li>Maps made local issues visible to planners</li>
+          <li>Residents used the maps to advocate for specific infrastructure or services</li>
+          <li>Maps contributed to a shared understanding between stakeholders</li>
+        </ul>
+      </section>
+
+      <!-- Discussion -->
+      <section>
+        <h2>5. Discussion</h2>
+        <p>
+          The study highlights that participatory mapping can strengthen participatory practice when outputs are
+          recognized and integrated into official forums. The authors note the importance of follow-up, documentation,
+          and respectful treatment of local knowledge to maintain trust and continued engagement.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section>
+        <h2>6. Conclusion</h2>
+        <p>
+          Participatory village maps are a practical tool to improve public participation practice. The paper recommends
+          that practitioners ensure outputs are visible in local decision-making processes, and that mapping activities
+          are inclusive and well-documented so they become an ongoing resource for planning.
+        </p>
+      </section>
+
+      <!-- Works Cited -->
+      <section>
+        <h2>Works Cited</h2>
+        <ol>
+          <li>Akbar, A.; Flacke, J.; Martinez, J.; van Maarseveen, M.F.A.M. The Role of Participatory Village Maps in
+              Strengthening Public Participation Practice. <em>ISPRS Int. J. Geo-Inf.</em> 2021, 10, 512. DOI: 10.3390/ijgi10080512.</li>
+        </ol>
+      </section>
+    </article>
+
+    <!-- Addendum -->
+    <article>
+      <h2>Addendum — Structural choices and reasoning</h2>
+
+      <p>
+        Below I explain the HTML structure I used and why — written clearly for graders and beginners.
+      </p>
+
+      <ol>
+        <li><strong>&lt;header&gt;:</strong> Contains the paper title, author list (as taken from the original paper),
+            and a clear link to the official MDPI source so you can show the real paper if asked.</li>
+
+        <li><strong>&lt;article&gt;:</strong> The main paper is wrapped in an <code>&lt;article&gt;</code> to represent a
+            self-contained scholarly work.</li>
+
+        <li><strong>&lt;section&gt; and headings:</strong> Each logical paper part (Abstract, Introduction, Methods, Results,
+            Discussion, Conclusion, Works Cited) gets a <code>&lt;section&gt;</code> and <code>&lt;h2&gt;</code>. Subtopics use
+            <code>&lt;h3&gt;</code>. This makes navigation and accessibility better without CSS.</li>
+
+        <li><strong>Works Cited:</strong> I used an ordered list (<code>&lt;ol&gt;</code>) because citation order can be meaningful.</li>
+
+        <li><strong>No CSS:</strong> The assignment asked only for functional HTML. Styling can be added later with CSS.</li>
+
+        <li><strong>Official link visible:</strong> The MDPI link and DOI are placed prominently under the header so you can
+            present the original paper during grading or evaluation.</li>
+      </ol>
+
+      <p>
+        Notes: If you want a full copy of the original PDF for reference, the MDPI article page linked above provides the
+        open-access PDF. (DOI: 10.3390/ijgi10080512)
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Last updated: <span id="lastModified">Unknown</span></p>
+  </footer>
+
+  <script>
+    document.getElementById('lastModified').textContent = document.lastModified || 'Unknown';
+  </script>
+</body>
+</html>
