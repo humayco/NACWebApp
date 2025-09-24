@@ -37,5 +37,8 @@ jobs:
             sudo systemctl enable apache2
             cd home
             # sudo mv * /var/www/html
-            sudo cp -r * /var/www/html/ITC505/
+            sudo rm -rf /var/www/html/ITC505/*
+            sudo mv * /var/www/html/ITC505/
+
+      
 
