@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Completion View</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    Bhavana Jandhyala - <a href="index1.html">Click here to go Grid Game</a>
+  </header>
+  <iframe src="https://flexboxfroggy.com/" title="Flex Box Froggy"></iframe>
+  <footer>
+    <span id="datetime"></span>
+  </footer>
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const formatted = now.toLocaleString('en-IN', {
+        dateStyle: 'long',
+        timeStyle: 'medium'
+      });
+      document.getElementById('datetime').textContent = formatted;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 60000);
+  </script>
+
+</body>
+</html>
