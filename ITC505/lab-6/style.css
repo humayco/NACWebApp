@@ -1,0 +1,75 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main advert"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 250px;
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.converter {
+    margin-top: 15px;
+}
+
+#convertBtn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.advert {
+    grid-area: advert;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.addendum {
+    margin-bottom: 10px;
+}

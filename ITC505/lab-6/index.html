@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 - Lab 6: Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Temperature Converter</h1>
+        <p>Welcome to Lab 6 - Holy Grail Layout with JavaScript</p>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Assignments</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Temperature Converter</h2>
+        <p>Enter a value below and choose the conversion type:</p>
+
+        <div class="converter">
+            <input type="number" id="tempInput" placeholder="Enter temperature">
+            <select id="conversionType">
+                <option value="toCelsius">Convert to Celsius</option>
+                <option value="toFahrenheit">Convert to Fahrenheit</option>
+            </select>
+            <button id="convertBtn">Convert</button>
+        </div>
+
+        <p id="result"></p>
+    </main>
+
+    <aside class="advert">
+        <a href="https://amzn.in/d/iB6ks0N" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/71657TiFeHL._SX679_.jpg" 
+                 alt="Advertisement" width="200">
+        </a>
+        <p>Click the image to visit Amazon.</p>
+    </aside>
+
+    <footer>
+        <section class="addendum">
+            <h3>Addendum</h3>
+            <p>
+                In this lab, I created a Holy Grail layout using CSS Grid. 
+                The JavaScript converts temperatures between Celsius and Fahrenheit. 
+                I used event listeners to trigger the conversion when the user clicks the button.
+                The main challenge was getting the grid areas aligned correctly, which I fixed by adjusting 
+                the column template settings.
+            </p>
+        </section>
+
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById("lastModified").textContent = x;
+    </script>
+</body>
+</html>
